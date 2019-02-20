@@ -1,5 +1,5 @@
 from flask import Flask, request, redirect, render_template
-import cgi
+import cgi #CGI code is invoked by an HTTP server, to process user submitted input through an HTML form.
 import re  #using re library to verify email takes what I had in a longer loop and makes it simpler. Could also use this for password check and username.
 app = Flask(__name__)
 
