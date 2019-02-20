@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<!--This gives the error text red color and the header the color blue-->
+        <style>
+            .error {
+                color: red;
+            }
+			h1 {
+				color: blue;
+			}
+			
+        </style>
+        <title>User Signup</title>
+    </head>
+    <body>
+	<!--This gives the header the comic sans font-->
+    <h1><font face = "Comic sans MS" size =" 5">User Signup</font><br /></h1>
+	
+<form method='POST'>
+	<!--This tells the the web, how to send the data. This data is sent after user submits -->
+    <label>Username
+		<!--This part creates the lables and text boxes. Could also create a cleaner page by using <tr></tr>(table row) and <tb></tb>(table)-->
+        <input name="username" type="text" value="{{username}}" />
+        <span class="error">{{username_error}}</span>
+    </label><br>
+    <br>
+    <label>Password
+        <input name="password" type="password" value='{{password}}' />
+        <span class="error">{{password_error}}</span>
+    </label>
+    <br>
+    <br>
+    <label for="verify">Verify Password
+        <input name="verify" type="password" />
+        <span class="error">{{verify_error}}</span>
+    </label>
+    <br>
+    <br>
+    <label for="email">Email (optional)</label>
+        <input name="email" value='{{email}}' />
+        <span class="error">{{email_error}}</span>
+    <br>
+    <br>
+		<!--This creates a submit button, the value is what the button says.-->
+    <input type="submit" value="Submit" />
+</form>
+    </body>
+</html>
