@@ -15,8 +15,8 @@ def submitted(): #User submitted information.
     password = request.form['password']
     verify = request.form['verify']
     email = request.form['email']
+    #Index Error
     username_error = ''
-	#Index Error
     password_error = ''
     verify_error = ''
     email_error = ''
